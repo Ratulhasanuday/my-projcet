@@ -9,7 +9,16 @@
             display: block;
             margin-bottom: 10px;
         }
+
+        table{
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 5px 10px;
+        }
     </style>
+    <link rel="stylesheet" href="style/table.css">
 </head>
 <body>
     <header>
@@ -18,7 +27,22 @@
                 <li><a href="form.html">Form</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="video.html">video</a></li>
-                <li><a href="table.html">Table</a></li>
+                <li>
+                    <a href="table.html">Table</a>
+                    <ul class="dropdown">
+                        <li><a href="form.html">Form</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="video.html">video</a></li>
+                        <li><a href="table.html">Table</a>
+                            <ul class="dropdown">
+                                <li><a href="form.html">Form</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="video.html">video</a></li>
+                                <li><a href="table.html">Table</a></li>
+                            </ul></li>
+                    </ul>
+                </li>
+                    
             </ul>
         </nav>
     </header>
